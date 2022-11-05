@@ -1,0 +1,73 @@
+print("\n\t*****PROGRAMMED BY*****")
+print("\t***BATURIANO, JOSEPH Z.***")
+print("\t******BSCOE 1-2******\n")
+
+Array = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
+
+
+def menu():
+    print("\n\t-----MENU-----")
+    print("\t1. Add an element\n"
+          "\t2. Insert an element\n"
+          "\t3. Modify an element\n"
+          "\t4. Delete an element\n"
+          "\t5. Arrange in ascending order\n"
+          "\t6. Arrange in descending order\n"
+          "\t7. Exit the program")
+    print("\t--------------")
+def goodbye():
+    print("Thanks for using this program!")
+
+
+menu()
+menu1 = int(input("\nEnter a choice: "))
+while menu1 != 8:
+    if menu1 == 1:
+        print("--------------------------")
+        Add = int(input("Add an element: "))
+        print("--------------------------")
+        Array.append(Add)
+        print("Your element now has been added!\n")
+        print("---> This is the new array: ", Array, "<---")
+    elif menu1 == 2:
+        print("--------------------------")
+        Insert = int(input("Insert an index(Where to put): "))
+        print("--------------------------")
+        Insert2 = int(input("What element to put?: "))
+        print("--------------------------")
+        Array.insert(Insert, Insert2)
+        print("Your element now has been inserted!\n")
+        print("---> This is the new array: ", Array, "<---")
+    elif menu1 == 3:
+        print("--------------------------")
+        Modify = int(input("Index of an element to change: "))
+        print("--------------------------")
+        Modify1 = int(input("What element to put?: "))
+        Array[Modify] = Modify1
+        print("---> This is the new array: ", Array, "<---")
+    elif menu1 == 4:
+        print("--------------------------")
+        Del = int(input("What number in array you wish to delete?: "))
+        if Del not in Array:
+            print(Del, "is not in the list, TRY AGAIN!")
+        else:
+            Array.remove(Del)
+            print("--------------------------")
+            print(Del, "is now deleted!")
+            print("---> This is the new array: ", Array, "<---")
+    elif menu1 == 5:
+        Array.sort()
+        print("--------------------------")
+        print("Your array now is in ascending order!")
+        print("---> This is the new array: ", Array, "<---")
+    elif menu1 == 6:
+        Array.sort()
+        Array.reverse()
+        print("--------------------------")
+        print("Your array now is in descending order!")
+        print("---> This is the new array: ", Array, "<---")
+    elif menu1 == 7:
+        goodbye()
+        break
+    menu()
+    menu1 = int(input("\nEnter a choice: "))
