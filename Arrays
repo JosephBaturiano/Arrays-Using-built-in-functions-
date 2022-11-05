@@ -44,6 +44,8 @@ while menu1 != 8:
         print("--------------------------")
         Modify1 = int(input("What element to put?: "))
         Array[Modify] = Modify1
+        print("--------------------------")
+        print("Your element now was already modified by your element of choice!")
         print("---> This is the new array: ", Array, "<---")
     elif menu1 == 4:
         print("--------------------------")
