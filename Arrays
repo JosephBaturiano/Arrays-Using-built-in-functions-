@@ -1,6 +1,6 @@
 print("\n\t*****PROGRAMMED BY*****")
 print("\t***BATURIANO, JOSEPH Z.***")
-print("\t******BSCOE 1-2******\n")
+print("\t******BSCOE 2-2******\n")
 
 Array = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50]
 
